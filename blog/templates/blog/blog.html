@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programmer/Yogesh</title>
+  </head>
+  <body>
+    <h1><a href=""> Programmer BLOG </a></h1>
+
+    {% for post in posts %}
+        <div>
+          <a href="#"> <p>{{ post.title }}</p></a>
+          <p>{{ post.text}}</p>
+          <p><h4>Published:</h4>{{ post.published_date}}</p>
+          <hr>
+        </div>
+    {% endfor %}
+
+  </body>
+</html>
