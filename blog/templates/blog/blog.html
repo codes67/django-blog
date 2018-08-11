@@ -9,7 +9,7 @@
 
     {% for post in posts %}
         <div>
-          <a href="#"> <p>{{ post.title }}</p></a>
+          <a href="{% url 'post_detail' pk=post.pk %}"> <p>{{ post.title }}</p></a>
           <p>{{ post.text}}</p>
           <p><h4>Published:</h4>{{ post.published_date}}</p>
           <hr>
