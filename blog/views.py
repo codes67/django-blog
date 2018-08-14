@@ -13,6 +13,7 @@ def post_detail(request, pk):
     stuff_for_frontend = {'post' : post}
     return render(request, 'blog/post_detail.html', stuff_for_frontend)
 
+
 def post_new(request):
     if request.method == 'POST':
          form = PostForm(request.POST)
