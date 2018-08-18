@@ -21,4 +21,6 @@ urlpatterns = [
 
     path('accounts/login/', auth_views.login, name='login'),
 
+    path('post/<int:pk>/comment/', views.add_comment_to_post, name='add_comment_to_post'),
+
 ]
