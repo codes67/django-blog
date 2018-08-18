@@ -25,6 +25,7 @@
           </div>
 
           <strong> {{ comment.author }}</strong>
+          <a href="{% url 'comment_remove' pk=comment.pk %}" class="delete_comment"><i class="fas fa-times-circle"></i></a>
           <p> {{ comment.text}}</p>
 
       </div>
