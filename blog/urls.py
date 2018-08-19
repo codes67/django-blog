@@ -15,6 +15,8 @@ urlpatterns = [
     #127.0.0.1:8000/1/edit
     path('post/<int:pk>/edit', views.post_edit, name='post_edit'),
 
+    path('post/<int:pk>/delete', views.post_delete, name='post_delete'),
+
     path('drafts/', views.post_draft_list, name='post_draft_list'),
 
     path('post/<int:pk>/publish/', views.post_publish, name='post_publish'),
